@@ -76,7 +76,7 @@ def test_order_query():
     print("-" * 50)
     
     try:
-        data = {"message": "查询订单 1001"}
+        data = {"message": "展示1001号订单的全部信息"}
         response = requests.post(f"{BASE_URL}/api/chat", json=data)
         
         if response.status_code == 200:
