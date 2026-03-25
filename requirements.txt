@@ -1,0 +1,19 @@
+# OpenAI SDK
+openai>=1.12.0
+
+# FastAPI (Web 服务)
+fastapi>=0.109.0
+uvicorn>=0.27.0
+pydantic>=2.0.0
+
+# Anthropic SDK (Claude)
+anthropic>=0.18.0
+
+# Google Generative AI (Gemini)
+google-generativeai>=0.4.0
+
+# HTTP 客户端（可选）
+httpx>=0.26.0
+
+# 异步支持（可选）
+aiohttp>=3.9.0
