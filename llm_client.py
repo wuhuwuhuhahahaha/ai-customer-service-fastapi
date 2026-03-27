@@ -13,6 +13,11 @@ client = OpenAI(
 # 4. 对话历史（包含短期记忆）
 conversation_history = [
     {'role': 'system', 'content': '你是一个智能助手，必须使用提供的工具函数来回答用户问题。'
+                                  '\n\n【数据库说明】'
+                                  '\n数据库中有三个表：'
+                                  '\n1. book（图书表）- 存储图书信息'
+                                  '\n2. borrow（借书表）- 存储借阅记录'
+                                  '\n3. user（用户表）- 存储用户信息'
                                   '\n\n【重要指令】'
                                   '\n当用户提到以下关键词时，你**必须**调用相应的函数：'
                                   '\n\n1. **查询数据/查看表/数据库内容** → 必须调用 execute_sql_query 或 get_table_info 函数'
