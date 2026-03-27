@@ -74,13 +74,6 @@ async def root():
         "docs": "/docs"  # API 文档地址
     }
 
-@app.get("/health")
-async def health_check():
-    """健康检查接口"""
-    return {
-        "status": "ok",
-        "message": "服务运行中"
-    }
 
 @app.post("/api/chat", response_model=ChatResponse)
 async def chat(request: ChatRequest):
