@@ -4,8 +4,8 @@ from tools import FUNCTIONS_SCHEMA, FUNCTION_MAP
 
 # 创建客户端（使用千问 API）
 client = OpenAI(
-    api_key='sk-fb5383b131ab4687815b57e8b2d6cc52',
-    base_url='https://dashscope.aliyuncs.com/compatible-mode/v1',
+    api_key='你的key',
+    base_url='自己查网址',
     max_retries=3,
     timeout=30.0
 )
